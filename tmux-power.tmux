@@ -138,13 +138,21 @@ tmux_set status-right "$RS"
 tmux_set window-status-format         "#[fg=$BG,bg=$G06]$rarrow#[fg=$TC,bg=$G06] #I:#W#F #[fg=$G06,bg=$BG]$rarrow"
 tmux_set window-status-current-format "#[fg=$BG,bg=$TC]$rarrow#[fg=$BG,bg=$TC,bold] #I:#W#F #[fg=$TC,bg=$BG,nobold]$rarrow"
 
+# Window status
+# tmux_set window-status-format "#[fg=$BG,bg=$GR1]#[fg=$FG] #I:#W#F #[fg=$GR1,bg=$BG,nobold]"
+# tmux_set window-status-current-format "#[fg=$BG,bg=$GR3]#[fg=$TC,bold] #I:#W#F #[fg=$GR3,bg=$BG,nobold]"
+
 # Window status style
 tmux_set window-status-style          "fg=$TC,bg=$BG,none"
 tmux_set window-status-last-style     "fg=$TC,bg=$BG,bold"
 tmux_set window-status-activity-style "fg=$TC,bg=$BG,bold"
+tmux_set window-status-current-statys "fg=$TC bg=$BG"
 
 # Window separator
 tmux_set window-status-separator ""
+
+# Window status alignment
+tmux_set status-justify left
 
 # Pane border
 tmux_set pane-border-style "fg=$G07,bg=default"
