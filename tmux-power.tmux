@@ -116,14 +116,14 @@ fi
 tmux_set status-right "$RS"
 
 # Window status
-tmux_set window-status-format " #I:#W#F "
-tmux_set window-status-current-format "#[fg=$BG,bg=$GR2]#[fg=$TC,bold] #I:#W#F #[fg=$GR2,bg=$BG,nobold]"
+tmux_set window-status-format "#[fg=$BG,bg=$GR1]#[fg=$FG] #I:#W#F #[fg=$GR1,bg=$BG,nobold]"
+tmux_set window-status-current-format "#[fg=$BG,bg=$GR3]#[fg=$TC,bold] #I:#W#F #[fg=$GR3,bg=$BG,nobold]"
 
 # Window separator
 tmux_set window-status-separator ""
 
 # Window status alignment
-tmux_set status-justify centre
+tmux_set status-justify left
 
 # Current window status
 tmux_set window-status-current-statys fg=$TC bg=$BG
